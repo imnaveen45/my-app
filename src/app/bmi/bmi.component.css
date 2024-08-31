@@ -1,0 +1,102 @@
+
+   /* Center the content on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Parent container styling */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Child container styling */
+.child {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+/* Title section styling */
+.c1 h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Content section styling */
+.c2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Input and label container styling */
+.c21 {
+    width: 100%;
+}
+
+/* Label and input field styling */
+.naveen {
+    font-size: 16px;
+    color: #333333;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#baji, #aravind {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Button styling */
+.jai {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.jai:hover {
+    background-color: #45a049;
+}
+
+/* Result display styling */
+.nitya {
+    font-size: 20px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+/* Empty container styling */
+.c22 {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    height: 150px;
+    margin-left: 10px;
+    flex-grow: 1;
+}

@@ -1,0 +1,76 @@
+/* Styling for the parent div */
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light background color */
+}
+
+.child1 {
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #333; /* Dark background for the sidebar */
+    color: #fff; /* White text color */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.child1 h1 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.child1 hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #444; /* Subtle divider line */
+    margin: 1rem 0;
+}
+
+.child1 a {
+    color: #ddd; /* Light grey text color */
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.child1 a:hover {
+    color: #fff; /* White text on hover */
+}
+
+.child1 button {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue background color */
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.child1 button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.child2 {
+    flex-grow: 1;
+    padding: 1rem;
+    background-color: #b2a7a7; /* Light background for content area */
+}
+
+router-outlet {
+    display: block;
+}

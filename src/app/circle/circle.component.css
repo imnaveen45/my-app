@@ -1,0 +1,80 @@
+/* Center the content on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Parent container styling */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Child container styling */
+.child {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Title styling */
+.child h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+.child label {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Input field styling */
+.child input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Buttons styling */
+.child button {
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.child button:hover {
+    background-color: #45a049;
+}
+
+/* Result display styling */
+#result {
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #333333;
+}

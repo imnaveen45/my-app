@@ -1,0 +1,66 @@
+<div class="parent">
+
+    <div class=" child1">
+
+    <input type="text" [(ngModel)]="term" (keyup)="filter()" placeholder="search">
+
+    <label for="">column</label>
+    <select name="" id="" [(ngModel)]="column">
+        <option>name</option>
+        <option>city</option>
+    </select>
+
+    <label for="">order</label>
+    <select name="" id="" [(ngModel)]="order">
+        <option value="asc">ascending</option>
+        <option value="desc">descending</option>
+    </select>
+
+    <button (click)="sort()">sort</button>
+    <br>
+    <br>
+
+
+    limit: <input type="number" [(ngModel)]="limit">
+    page:  <input type="number" [(ngModel)]="page">
+
+    <button (click)="paginate()">paginate</button>
+    </div>
+ <div class="child2">
+ <div class="child3" *ngFor="let talent of millennium">
+
+        <div class="c1">
+            {{talent.school_name}}
+        </div>
+        <div class="c2">
+            <div class="c21">
+            <form action="">
+                <label for="">name:</label>
+                {{talent.name}}
+                <br>
+                <label for="">phone:</label>
+                {{talent.phone}}
+                <br>
+                <label for="">DOB:</label>
+                {{talent.dob}}
+                <br>
+                <label for="">city:</label>
+                {{talent.city}}
+                <br>
+                <label for="">email:</label>
+                {{talent.email}}
+            
+            </form>
+          </div>
+          <div class="c22">
+            <img src="{{talent.profile_picture}}" alt="" width="120px" height="98px">
+          </div>
+        </div>
+        <div class="c3">
+            <button>View</button>
+            <button>Edit</button>
+            <button>Delete</button>
+        </div>
+        </div>
+        </div>
+    </div>

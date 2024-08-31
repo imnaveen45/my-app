@@ -1,0 +1,58 @@
+<p>vechiles works!</p>
+<input type="text" [(ngModel)]="term" (keyup)="filter()">
+
+<label for="">column</label>
+<select name="" id="" [(ngModel)]="column">
+    <option>color</option>
+    <option>type</option>
+</select>
+
+<label for="">order</label>
+<select name="" id="" [(ngModel)]="order">
+<option value="asc">ascending</option>
+<option value="desc">descending</option>
+</select>
+<button (click)="sort()">sort</button>
+<table border="1">
+    <!-- <label for="">page</label>
+    <select name="" id="" [(ngModel)]="page">
+        <option value="1">page1</option>
+        <option value="2">page2</option>
+        <option value="3">page3</option>
+    </select>
+    <button (click)="pagination()">pagination</button> -->
+    <thead>
+        <tr>
+            <th>vechile</th>
+            <th>manufacturer</th>
+            <th>model</th>
+            <th>type</th>
+            <th>fuel</th>
+            <th>color</th>
+            <th>image</th>
+            <th>cost</th>
+            <th>id</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vechile of vechiles">
+            <td>{{vechile.Vehicle}}</td>
+            <td>{{vechile.manufacturer}}</td>
+            <td>{{vechile.model}}</td>
+            <td>{{vechile.type}}</td>
+            <td>{{vechile.fuel}}</td>
+            <td>{{vechile.color}}</td>
+            <td>
+                <img src="{{vechile.image}}" alt="" width="100px height=100px" >
+            </td>
+            <td>{{vechile.cost}}</td>
+            <td>{{vechile.id}}</td>
+            <td>
+                <button (click)="view(vechile.id)">view</button>
+                <button (click)="delete(vechile.id)">delete</button>
+                <button (click)="edit(vechile.id)">edit</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

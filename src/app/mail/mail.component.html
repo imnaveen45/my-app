@@ -1,0 +1,9 @@
+<p>mail works!</p>
+ 
+<div class="parent">
+
+    <div class="child" *ngFor="let mail of bag" [ngStyle]="{'color':mail.completed==true?'red':'black'}">
+      {{mail.id}}
+      {{mail.title}}
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<p>banking works!</p>
+
+<input type="text" [(ngModel)]="term" (keyup)="filter()">
+<label for="">column</label>
+<select name="" id="" [(ngModel)]="column">
+    <option>city</option>
+    <option>account_number</option>
+</select>
+<label for="">order</label>
+<select name="" id="" [(ngModel)]="order">
+    <option value="asc">ascending</option>
+    <option value="desc">descending</option>
+</select>
+<button (click)="sort()">sort</button>
+<table border="1">
+    <thead>
+        <tr>
+            <th>account_name</th>
+            <th>available_balance</th>
+            <th>account_number</th>
+            <th>city</th>
+            <th>profile_picture</th>
+            <th>id</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let banking of banking">
+            <th>{{banking.account_name}}</th>
+            <th>{{banking.available_balance}}</th>
+            <th>{{banking.account_number}}</th>
+            <th>{{banking.city}}</th>
+            <th>
+              <img src="{{banking.profile_picture}}" alt="" width="100px" height="100px">  
+            </th>
+            <th>{{banking.id}}</th>
+            <th>
+                <button (click)="view(banking.id)">view</button>
+                <button (click)="edit(banking.id)">edit</button>
+                <button (click)="delete(banking.id)">delete</button>
+            </th>
+        </tr>
+    </tbody>
+</table>

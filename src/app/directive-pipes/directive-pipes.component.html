@@ -1,0 +1,61 @@
+<p>directive-pipes works!</p>
+<!-- foe(let age of ages){
+ console.log(age)
+ } -->
+ <h1 *ngFor="let age of ages">
+    my age is {{age}}
+    
+ </h1>
+ <ul>
+
+    <li *ngFor="let state of states">
+        {{state | lowercase}}
+
+    </li>
+ </ul>
+
+ <select name="" id="">
+    <option *ngFor="let state of states;let i=index"  value="">
+      {{i+1}}  {{state | uppercase}}
+
+    </option>
+ </select>
+
+ <h3 *ngFor="let user of users">
+    my name is {{user.name}} with age {{user.age}}.phone is {{user.phone}}
+
+ </h3>
+
+ <table border="1">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>phone</th>
+            <th>marks</th>
+            
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td [ngStyle]="{'color':user.age<18?'red':'green'}">{{user.age}}</td>
+            <td>{{user.phone}}</td>
+            <td [ngClass]="{'pass':user.marks>=35,'fail':user.marks<35&&user.marks>0,'invalid':user.marks<0||user.marks>100}">{{user.marks}}</td>
+        </tr>
+    </tbody>
+ </table>
+
+ <!-- *ngIf -->
+  <h1 *ngIf="true">hello text one</h1>
+  <h1 *ngIf="false">hello text two</h1>
+
+  <!-- pipes -->
+
+  <h1>{{today}}</h1>
+  <h1>{{today | date}}</h1>
+  <h1>{{today | date:'yyyy-MM-dd'}}</h1>
+  <h1>{{today | date:'dd/MM/yy'}}</h1>
+  <h1>{{today | date:'M/d/yy, h:mm a'}}</h1>
+  <h1>{{today | date:'EEEE, MMMM d, y, h:mm:ss a zzzz'}}</h1>

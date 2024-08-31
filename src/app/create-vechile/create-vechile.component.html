@@ -1,0 +1,45 @@
+<p>create-vechile works!</p>
+
+<div class="parent">
+
+    <form [formGroup]="vechileForm">
+
+        <h1>{{id?'edit vechile form':'create vechile form'}}</h1>
+
+        <label for="">vechile</label>
+        <input type="text" formControlName="Vechile">
+        <br>
+
+        <label for="">manufacturer</label>
+        <input type="text" formControlName="manufacturer">
+        <br>
+
+        <label for="">model</label>
+        <input type="text" formControlName="model">
+        <br>
+
+        <label for="">type</label>
+        <input type="text" formControlName="type">
+        <br>
+
+        <label for="">fuel</label>
+        <input type="text" formControlName="fuel">
+        <br>
+
+        <label for="">color</label>
+        <input type="text" formControlName="color">
+        <br>
+
+        <label for="">image</label>
+        <input type="text" formControlName="image">
+        <br>
+
+        <label for="">cost</label>
+        <input type="text" formControlName="cost">
+        <br>
+
+        <button (click)="create()">{{id?'update':'create'}}</button>
+
+        
+    </form>
+</div>

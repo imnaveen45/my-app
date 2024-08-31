@@ -1,0 +1,35 @@
+<p>flipkart works!</p>
+<input type="text" [(ngModel)]="term" (keyup)="filter()">
+<button (click)="dhoni()" >only free delivery</button>
+<button (click)="rohit()">price low to high</button>
+<button (click)="dawan()">price high to low</button>
+<button (click)="virat()">rating low to high</button>
+<button (click)="kohli()">rating high to low</button>
+<br>
+<button (click)="asus()">apply 50% discount</button>
+<button (click)="acer()">price with delivery charges</button>
+<br> 
+<button (click)="dell()">total price</button>
+<!-- <button (click)="hp()">total cart items</button> -->
+<table border="1">
+    <thead>
+<tr>
+    <th>s.no</th>
+    <th>product name</th>
+    <th>price</th>
+    <th>rating</th>
+    <th>free dekivery</th>
+    
+</tr>
+    </thead>
+    <tbody>
+     <tr *ngFor="let product of products; let i=index">
+        <td>{{i}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.rating}}</td>
+        <td>{{product.freedelivery}}</td>
+        
+     </tr>
+    </tbody>
+</table>

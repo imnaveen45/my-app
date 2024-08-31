@@ -1,0 +1,28 @@
+
+<div class="parent">
+    <p>Create-Bank Form</p>
+    <form [formGroup]="_naveen">
+      <h1>{{id?'edit bank form':'create bank form'}}</h1>
+      <label for="">account name</label>
+      <input type="text" formControlName="account_name">
+      <br>
+      <label for="">available balance</label>
+      <input type="text" formControlName="available_balance">
+      <br>
+      <label for="">account balance</label>
+      <input type="text" formControlName="account_number">
+      <br>
+      <label for="">city</label>
+      <input type="text" formControlName="city">
+      <br>
+      <label for="">profile_picture</label>
+      <input type="text" formControlName="profie_picture">
+      <br>
+      <button (click)="create()">{{id?'update':'create'}}</button>
+      
+    </form>
+ 
+
+
+
+</div>

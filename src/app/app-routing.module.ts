@@ -26,6 +26,7 @@ import { CreatestudentFormComponent } from './createstudent-form/createstudent-f
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { ViewVechileComponent } from './view-vechile/view-vechile.component';
 import { ViewBankingComponent } from './view-banking/view-banking.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 
 const routes: Routes = [
@@ -55,6 +56,7 @@ const routes: Routes = [
     {path:'edit-vechile/:id',component:CreateVechileComponent},
     {path:'view-banking/:id',component:ViewBankingComponent},
     {path:'edit-banking/:id',component:CreateBankComponent},
+    {path:'create-user',component:CreateUserComponent},
     {path:'',component:WelcomeComponent}
   ]},
   {path:'', component:LoginComponent},

@@ -30,6 +30,7 @@ import { CreatestudentFormComponent } from './createstudent-form/createstudent-f
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { ViewVechileComponent } from './view-vechile/view-vechile.component';
 import { ViewBankingComponent } from './view-banking/view-banking.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +58,8 @@ import { ViewBankingComponent } from './view-banking/view-banking.component';
     CreatestudentFormComponent,
     PhotoGalleryComponent,
     ViewVechileComponent,
-    ViewBankingComponent
+    ViewBankingComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
